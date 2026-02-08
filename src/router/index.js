@@ -10,6 +10,9 @@ import ReviewsView from '../views/ReviewsView.vue'
 import AboutView from '../views/AboutView.vue'
 import ContactView from '../views/ContactView.vue'
 import ForSaleView from '../views/ForSaleView.vue'
+import TermsView from '../views/TermsView.vue'
+import PrivacyView from '../views/PrivacyView.vue'
+import SitemapView from '../views/SitemapView.vue'
 
 const routes = [
   { path: '/', name: 'home', component: HomeView },
@@ -22,7 +25,10 @@ const routes = [
   { path: '/reviews', name: 'reviews', component: ReviewsView },
   { path: '/about', name: 'about', component: AboutView },
   { path: '/contact', name: 'contact', component: ContactView },
-  { path: '/for-sale', name: 'for-sale', component: ForSaleView }
+  { path: '/for-sale', name: 'for-sale', component: ForSaleView },
+  { path: '/terms', name: 'terms', component: TermsView },
+  { path: '/privacy', name: 'privacy', component: PrivacyView },
+  { path: '/sitemap', name: 'sitemap', component: SitemapView }
 ]
 
 const router = createRouter({

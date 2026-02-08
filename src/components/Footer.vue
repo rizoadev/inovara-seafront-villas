@@ -1,4 +1,5 @@
 <script setup>
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -22,11 +23,11 @@
         <div>
           <h4 class="text-sm font-semibold uppercase tracking-wider mb-6">Quick Links</h4>
           <ul class="space-y-3">
-            <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Find a house</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Destinations</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Houses for sale</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">About us</a></li>
-            <li><a href="#" class="text-gray-400 hover:text-primary transition text-sm">Contact</a></li>
+            <li><RouterLink to="/properties" class="text-gray-400 hover:text-primary transition text-sm">Find a house</RouterLink></li>
+            <li><RouterLink to="/destinations" class="text-gray-400 hover:text-primary transition text-sm">Destinations</RouterLink></li>
+            <li><RouterLink to="/for-sale" class="text-gray-400 hover:text-primary transition text-sm">Houses for sale</RouterLink></li>
+            <li><RouterLink to="/about" class="text-gray-400 hover:text-primary transition text-sm">About us</RouterLink></li>
+            <li><RouterLink to="/contact" class="text-gray-400 hover:text-primary transition text-sm">Contact</RouterLink></li>
           </ul>
         </div>
 
@@ -92,9 +93,9 @@
       <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <p class="text-gray-500 text-sm">© 2024 SEAFRONT VILLAS. All rights reserved.</p>
         <div class="flex gap-6">
-          <a href="#" class="text-gray-500 hover:text-primary text-sm transition">Privacy Policy</a>
-          <a href="#" class="text-gray-500 hover:text-primary text-sm transition">Terms of Service</a>
-          <a href="#" class="text-gray-500 hover:text-primary text-sm transition">Sitemap</a>
+          <RouterLink to="/privacy" class="text-gray-500 hover:text-primary text-sm transition">Privacy Policy</RouterLink>
+          <RouterLink to="/terms" class="text-gray-500 hover:text-primary text-sm transition">Terms of Service</RouterLink>
+          <RouterLink to="/sitemap" class="text-gray-500 hover:text-primary text-sm transition">Sitemap</RouterLink>
         </div>
       </div>
     </div>
