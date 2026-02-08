@@ -8,7 +8,5 @@ Luxury villa landing page - French Riviera
 - Vue Router
 
 ## Deploy
-See [DEPLOY.md](DEPLOY.md) for Cloudflare Pages setup.
-
-## Status
-✅ Git push test - OK
+- **Production:** https://inovara-seafront-villas.pages.dev
+- **DEPLOY.md** - Cloudflare Pages setup guide
